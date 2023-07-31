@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./global-style.css">
+</head>
+
+<body>
+    <section class="modal">
+        <h2>Добавить товар</h2>
+        <form method="post" class="form">
+            <label class="form__label">
+                <p class="form__label_text">Наименование</p>
+                <input type="text" class="form__label_area">
+            </label>
+            <label class="form__label">
+                <p class="form__label_text">Категория</p>
+                <input type="text" class="form__label_area">
+            </label>
+            <label class="form__label">
+                <p class="form__label_text">Единицы измерения</p>
+                <input type="text" class="form__label_area">
+            </label>
+            <label class="form__label">
+                <p class="form__label_text">Дисконт</p>
+                <section class="form__label_sale checkbox">
+                    <input type="checkbox" class="checkbox__input">
+                    <input type="text" class="form__label_area">
+                </section>
+            </label>
+            <label class="form__label description">
+                <p class="form__label_text">Описание</p>
+                <textarea name="" class="form__label_area description_text"></textarea>
+            </label>
+            <label class="form__label">
+                <p class="form__label_text">Количество</p>
+                <input type="number" class="form__label_area">
+            </label>
+            <label class="form__label">
+                <p class="form__label_text">Цена</p>
+                <input type="number" class="form__label_area">
+            </label>
+        </form>
+        <button type="submit" class="button">Добавить товар</button>
+        <section class="close">
+            <img src="./images/Group 85.svg" alt="close" class="close__svg">
+        </section>
+    </section>
+</body>
+</html>

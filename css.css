@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #6E6893;
+}
+
+.modal {
+    max-width: 792px;
+    padding-bottom: 28px;
+    margin: 0 auto;
+    background-color: #F2F0F9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.modal h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-top: 32px;
+    padding-bottom: 43px;
+}
+
+.form {
+    background-color: #FFF;
+    width: 580px;
+    padding: 20px 28px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+}
+
+.form .form__label {
+    padding: 6px 0;
+    display: block;
+}
+
+.form__label .form__label_text {
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+input, textarea {
+    outline:none;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.form__label .form__label_area {
+    background-color: #F4F2FF;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form__label .form__label_sale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__label_sale .checkbox {
+    height: 100%;
+}
+
+.checkbox {
+    position: relative;
+    padding-left: 40px;
+}
+
+.checkbox__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox__input:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #F4F2FF;
+    border-radius: 5px;
+}
+
+.checkbox__input:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 20px;
+    height: 10px;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.checkbox__input:focus-visible {
+    outline: none
+}
+
+.checkbox__input:checked:after {
+    opacity: 1
+}
+
+.checkbox__input:focus:before {
+    box-shadow: 0px 0px 10px rgba(113, 0, 227, 0.5);
+}
+
+.checkbox__input:hover:not(:disabled):before {
+    box-shadow: 0px 0px 10px rgba(0, 113, 227, 0.5);
+}
+
+.checkbox__input:disabled:before {
+    background-color: #cccccc;
+}
+
+.form__label_sale .form__label_area {
+    background-color: #eeeeee;
+}
+
+.description .description_text{
+    min-height: 112px;
+}
+
+.button {
+    margin-top: 32px;
+    width: 200px;
+    background-color: #6D5BD0;
+    color: white;
+    font-size: 16px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin: 23px 134px 0 auto;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.close  .close__svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
